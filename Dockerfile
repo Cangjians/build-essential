@@ -1,15 +1,14 @@
-FROM ubuntu:16.04
+FROM fedora:25
 MAINTAINER Cangjians (https://cangjians.github.io)
 
 # install essential packages
-RUN apt-get update && \
-    apt-get -y upgrade && \
-    apt-get -y install \
-      build-essential \
-      libtool m4 pkg-config autotools-dev automake \
-      libsqlite3-dev \
-      cython3 python3 \
-      autopoint intltool libibus-1.0-dev python3-gi gir1.2-gtk-3.0
+RUN dnf -y update && \
+    dnf -y install \
+      make automake gcc gcc-c++ \
+      libtool m4 automake \
+      libsqlite3x-devel \
+      python3 python3-devel python3-pkgconfig python3-Cython python3-gobject \
+      ibus-libs ibus-devel gettext-common-devel intltool
 
 ENTRYPOINT ["/bin/bash"]
 CMD []
