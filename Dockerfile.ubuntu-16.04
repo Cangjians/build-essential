@@ -1,6 +1,9 @@
 FROM ubuntu:16.04
 MAINTAINER Cangjians (https://cangjians.github.io)
 
+# mark the version of this image
+RUN echo "ubuntu-16.04" > /var/version
+
 # install essential packages
 RUN apt-get update && \
     apt-get -y upgrade && \
