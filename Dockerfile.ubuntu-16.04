@@ -14,5 +14,4 @@ RUN apt-get update && \
       cython3 python3 \
       autopoint intltool libibus-1.0-dev python3-gi gir1.2-gtk-3.0
 
-ENTRYPOINT ["/bin/bash"]
-CMD []
+CMD ["/bin/bash"]
