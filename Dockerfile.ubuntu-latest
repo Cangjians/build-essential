@@ -1,8 +1,8 @@
-FROM ubuntu:16.04
+FROM ubuntu:rolling
 MAINTAINER Cangjians (https://cangjians.github.io)
 
 # mark the version of this image
-RUN echo "ubuntu-16.04" > /var/version
+RUN echo "ubuntu-latest" > /var/version
 
 # install essential packages
 RUN apt-get update && \
