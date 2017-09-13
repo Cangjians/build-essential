@@ -1,8 +1,8 @@
-FROM fedora:25
+FROM fedora:latest
 MAINTAINER Cangjians (https://cangjians.github.io)
 
 # mark the version of this image
-RUN echo "fedora-25" > /var/version
+RUN echo "fedora-latest" > /var/version
 
 # install essential packages
 RUN dnf -y update && \
