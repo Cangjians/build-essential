@@ -1,5 +1,9 @@
 # Cangjians Build Essential
 
+[![docker-status-shield]][docker hub]
+[![docker-automate-shield]][docker hub]
+[![license-shield]][license-url]
+
 Docker image basics for building libcangjie, pycangjie and ibus-cangjie.
 
 This is an effort for building a stable test environment for the Cangjian
@@ -19,6 +23,12 @@ The Cangjians stack current consist of 3 components:
 
 For more details, please visit our [website].
 
+[travis-shield]: https://api.travis-ci.org/Cangjians/build-essential.svg?branch=master
+[docker-status-shield]: https://img.shields.io/docker/build/cangjians/build-essential.svg
+[docker-automate-shield]: https://img.shields.io/docker/automated/cangjians/build-essential.svg
+[license-url]: http://www.gnu.org/licenses/lgpl.html
+[license-shield]: https://img.shields.io/github/license/cangjians/build-essential.svg
+
 [docker hub]: https://hub.docker.com/r/cangjians/build-essential/
 [libcangjie]: https://github.com/Cangjians/libcangjie
 [pycangjie]: https://github.com/Cangjians/pycangjie
@@ -32,7 +42,7 @@ For more details, please visit our [website].
 ## Legalities
 
 Cangjians Build Essential is offered under the terms of the
-[GNU General Public License, either version 3 or any later version](http://www.gnu.org/licenses/lgpl.html). A copy of
+[GNU General Public License, either version 3 or any later version][license-url]. A copy of
 the latest licence known now (GPL v3) is also
 [attached in this repository][LICENCE].
 
