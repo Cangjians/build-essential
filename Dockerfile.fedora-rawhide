@@ -5,8 +5,8 @@ MAINTAINER Cangjians (https://cangjians.github.io)
 RUN echo "fedora-rawhide" > /var/version
 
 # install essential packages
-RUN dnf -y update && \
-    dnf -y install \
+RUN dnf -y --nogpgcheck update && \
+    dnf -y --nogpgcheck install \
       make automake gcc gcc-c++ \
       libtool m4 automake \
       libsqlite3x-devel \
